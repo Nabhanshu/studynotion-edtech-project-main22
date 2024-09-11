@@ -27,7 +27,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin: "*",
+		origin: '*', // Vercel domain
+    methods: 'GET,POST,PUT,DELETE',
 		credentials: true,
 	})
 );
